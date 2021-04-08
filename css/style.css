@@ -14,6 +14,7 @@
   --black-title: #303030;
   --gray: #cfcfcf;
   --input-error: red;
+  --input-sucess: rgb(75, 207, 168);
   --button-disabled: #acacac;
 }
 
@@ -113,6 +114,14 @@
 .login__submit:disabled {
    background: var(--button-disabled);
    cursor: not-allowed;
+}
+
+.login__submit.error {
+  background: var(--input-error);
+}
+
+.login__submit.success {
+  background: var(--input-sucess);
 }
 
 .login__reset {
