@@ -1,0 +1,177 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050510;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 481px) {
+  .wrapper {
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  padding: 50px 30px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.shape__1 {
+  height: 220px;
+  width: 220px;
+  background: linear-gradient(
+    #ff0e72,
+    #ff66a6
+  );
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: -80px;
+  z-index: -1;
+}
+.shape__2 {
+  height: 180px;
+  width: 180px;
+  background: linear-gradient(
+    #3da5e0,
+    #325ea5
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  right: 50px;
+  z-index: -1;
+}
+
+.container * {
+  color: #fff;
+  font-weight: 500;
+}
+
+h2 {
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.skills__types:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.skills__details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.skills__bar {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.06); /*FAZER VAR*/
+  padding: 7px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.skills__bar div {
+  position: relative;
+  width: 0;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #badefc;
+  border: 1px solid #1c97fc;
+  box-shadow: 0 0 5px rgba(28, 151, 252, 0.6);
+}
+
+.bar__html {
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+  100% {
+    width: 60%;
+  }
+}
+
+.bar__css {
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+  100% {
+    width: 40%;
+  }
+}
+
+.bar__javascript {
+  animation: javascript-fill 2s forwards;
+}
+@keyframes javascript-fill {
+  100% {
+    width: 20%;
+  }
+}
+
+.bar__mongodb {
+  animation: mongodb-fill 2s forwards;
+}
+@keyframes mongodb-fill {
+  100% {
+    width: 10%;
+  }
+}
+
+.bar__nodejs {
+  animation: nodejs-fill 2s forwards;
+}
+@keyframes nodejs-fill {
+  100% {
+    width: 15%;
+  }
+}
+
+.bar__reactnative {
+  animation: reactnative-fill 2s forwards;
+}
+@keyframes reactnative-fill {
+  100% {
+    width: 15%;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.06);
+  height: 20px;
+}
+
+footer p, a {
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+}
