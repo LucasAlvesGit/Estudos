@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #151725;
+}
+
+.img__slide {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+}
+
+.img {
+  flex: 1;
+  height: 100%;
+  transform: skew(5deg);
+  cursor: pointer;
+  margin: 0 2px;
+  transition: all 0.4s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.slide1 {
+  background-image: url(../img/img1.jpg);
+}
+.slide2 {
+  background-image: url(../img/img2.jpg);
+}
+.slide3 {
+  background-image: url(../img/img3.jpg);
+}
+.slide4 {
+  background-image: url(../img/img4.jpg);
+}
+
+.img p {
+  position: absolute;
+  left: 0;  bottom: 0;
+  padding: 10px;
+  background-color: #0000009c;
+  transform: rotate(-90deg);
+  transition: all .3s; 
+  transform-origin: 0% 0%;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap
+}
+
+.img__slide:hover .img {
+  transform: skew(0);
+}
+
+.img:hover {
+  flex: 5;
+}
+
+.img:hover p {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transform: rotate(0deg);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color:#0000004b;
+  color: #fff;
+  width: 100vw;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  font-size: 1.1em;
+  color: #eb4166;
+  text-decoration: none;
+  transition: all .6s;
+}
+
+footer a:hover {
+  color: #fff;
+}
